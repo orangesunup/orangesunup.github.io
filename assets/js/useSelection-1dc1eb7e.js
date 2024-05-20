@@ -1,1 +1,0 @@
-import{r as l,a as o}from"./index-3efbb394.js";const i=()=>{const t=l(!1),s=l([]),a=o(()=>{let e=[];return s.value.forEach(n=>{e.push(n.SerialKey)}),e});return{isSelected:t,selectedList:s,selectedListIds:a,selectionChange:e=>{e.length===0?t.value=!1:t.value=!0,s.value=e},getRowKeys:e=>e.SerialKey}};export{i as u};
