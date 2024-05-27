@@ -35,6 +35,33 @@
 <!--背景-->
 <canvas id="sakura" style=" position: absolute ;z-index: 1"></canvas>
 <audio id="bgmusic" src="heart.mp3" autoplay="autoplay" loop="loop" style="display: block; width: 3%; height:3%;"></audio>
+
+<script type="text/javascript">
+	function password() { 
+	var testV = 1; var pass1 = prompt('请输入密码:',''); 
+	   while (testV < 100) 
+	   { 
+		   if (!pass1)
+			history.go(-1);
+		if (pass1 == "123")
+		 {
+		   //设置密码 
+		   //alert('口令正确，进行跳转'); 
+		   window.location.href="http://orangesunup.github.io";//添加你要跳转的页面
+			break; 
+		 } 
+		 testV+=1; 
+		 var pass1 = prompt('密码错误','');
+	   } 
+		 if (pass1!="password" & testV ==100) 
+		 history.go(-1); 
+		 return; 
+	}
+		  document.write(password());
+		 
+		
+		
+   </script>
     <script type="text/javascript">
 		alert("欢迎观看小刘的大制作");
 		alert("随机点击飘落的树叶可以收听我点的歌哦!");
@@ -54,7 +81,7 @@ setInterval("toggleSound()",1);
 
 
 
-<div style="position: absolute ;z-index: 9999" id="mainDiv">
+<div style="position: absolute ;z-index: 9999" id="mainDiv"  style="display:none;">
 
 	<div id="content">
 
@@ -87,8 +114,6 @@ setInterval("toggleSound()",1);
 	</div>
 
 </div>
-
-
 
 
 <script type="text/javascript">
